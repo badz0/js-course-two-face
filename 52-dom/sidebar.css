@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: powderblue;
+}
+
+
+
+.menu {
+  position: fixed;
+  width: 150px;
+  height: 100vh;
+  background-color: salmon;
+  z-index: 11;
+  transform: translateX(-100%);
+  transition: all .3s;
+}
+
+.menu.open {
+  transform: translateX(0);
+}
+
+.menu-sider {
+  position: fixed;
+  right: 0;
+  height: 100vh;
+  width: calc(100vw - 100px);
+  pointer-events: none;
+}
+
+.menu.open + .menu-sider {
+  pointer-events: all;
+}

@@ -1,0 +1,39 @@
+.button-wrap {
+  width: 100px;
+  height: 100px;
+  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.mosaic {
+  flex-basis: 20px;
+  height: 20px;
+}
+
+
+#div2 {
+  background: red;
+  width: 50px;
+  height: 50px;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.square {
+  background: blue;
+  border: 2px solid plum;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+}
+
+/* .square > p {
+  pointer-events: none;
+} */

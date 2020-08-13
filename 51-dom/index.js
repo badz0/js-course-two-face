@@ -152,3 +152,32 @@ let styles = `
 
 document.body.innerHTML += styles;
 
+
+
+const nameInput =  document.querySelector('#name-input');
+
+function onChange(val) {
+  console.log('val: ', val.key, Date.now());
+}
+
+nameInput.addEventListener('keyup', debounce(onChange, 1000));
+
+
+function debounce(fn, tm) {
+  let lastCall = Date.now();
+  let timeId;
+  function test(...args) {
+    if (Date.now() - lastCall >= tm) {
+      console.log('call');
+      fn(...args);
+    } else {
+      console.log('delay');
+      if (timeId) clearTimeout(timeId);
+      timeId = setTimeout(test, tm, ...args);
+    }
+    lastCall = Date.now();
+  }
+  return test;
+}
+
+
