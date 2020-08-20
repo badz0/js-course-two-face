@@ -8,32 +8,28 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-
-  <form name="createUser">
-    <label for="">
-      name
-      <input type="text" name="name">
-    </label>
-    <label for="">
-      email
-      <input type="text" id="email">
-    </label>
-    <button type="button" id="create">create</button>
-  </form>
-
-
-
   <div>
-    <form name="filterForm">
+    <form name="createUser">
       <label>
-        Name filter
-        <input type="text" name="filterInput">
+        Name
+        <input type="text" name="name">
       </label>
-      <button type="button" name="filterApply">Filter</button>
+      <label>
+        Email
+        <input type="text" name="email">
+      </label>
+      <button type="button" id="create">create</button>
     </form>
+  </div>
+  <div>
+    <button id="prev">prev</button>
+    <button id="next">next</button>
+    <button id="displaySaved">display saved</button>
   </div>
 
   <div class="users"></div>
+
+
 
 
 
@@ -46,6 +42,7 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
   <script src="index.js"></script>
 
 </body>
