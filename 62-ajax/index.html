@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <form name="createUser">
+    <label for="">
+      name
+      <input type="text" name="name">
+    </label>
+    <label for="">
+      email
+      <input type="text" id="email">
+    </label>
+    <button type="button" id="create">create</button>
+  </form>
+
+
+
+  <div>
+    <form name="filterForm">
+      <label>
+        Name filter
+        <input type="text" name="filterInput">
+      </label>
+      <button type="button" name="filterApply">Filter</button>
+    </form>
+  </div>
+
+  <div class="users"></div>
+
+
+
+
+
+
+  <div class="details">
+    <div class="details__content"></div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="index.js"></script>
+
+</body>
+</html>
